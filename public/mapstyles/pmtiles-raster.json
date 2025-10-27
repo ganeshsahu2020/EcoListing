@@ -1,0 +1,17 @@
+{
+  "version": 8,
+  "name": "PMTiles local raster",
+  "sources": {
+    "pmtiles-osm": {
+      "type": "raster",
+      "tiles": ["pmtiles:///tiles/city_raster.pmtiles/{z}/{x}/{y}"],
+      "tileSize": 256,
+      "minzoom": 0,
+      "maxzoom": 14,
+      "attribution": "© OpenStreetMap contributors"
+    }
+  },
+  "layers": [
+    { "id": "pmtiles-osm", "type": "raster", "source": "pmtiles-osm" }
+  ]
+}

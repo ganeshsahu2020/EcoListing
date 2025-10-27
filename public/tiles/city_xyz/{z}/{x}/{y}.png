@@ -1,0 +1,21 @@
+// utils/mapStyle.ts (or wherever you build styles)
+export function getMapStyle(kind: string) {
+  if (kind === "local") {
+    return {
+      version: 8,
+      sources: {
+        localxyz: {
+          type: "raster",
+          tiles: ["/tiles/city_xyz/{z}/{x}/{y}.png"],
+          tileSize: 256,
+          minzoom: 9,
+          maxzoom: 12,
+          attribution: "© Your data"
+        }
+      },
+      layers: [{ id: "localxyz", type: "raster", source: "localxyz" }]
+    };
+  }
+
+  // keep your other styles ...
+}

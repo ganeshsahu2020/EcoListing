@@ -1,0 +1,18 @@
+{
+  "version": 8,
+  "name": "Local XYZ raster",
+  "glyphs": "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+  "sources": {
+    "local-xyz": {
+      "type": "raster",
+      "tiles": ["/tiles/city_xyz/{z}/{x}/{y}.png"],
+      "tileSize": 256,
+      "minzoom": 0,
+      "maxzoom": 14,
+      "attribution": "© OpenStreetMap contributors"
+    }
+  },
+  "layers": [
+    { "id": "local-xyz", "type": "raster", "source": "local-xyz" }
+  ]
+}

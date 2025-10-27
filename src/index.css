@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Base tweaks */
+@layer base {
+  :root {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color-scheme: light;
+  }
+  html, body, #root { 
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Reusable components */
+@layer components {
+  .card { 
+    @apply rounded-2xl border border-slate-200 bg-white shadow-sm; 
+  }
+
+  .btn { 
+    @apply inline-flex items-center rounded-lg px-3 py-2 font-medium; 
+  }
+  .btn-primary { 
+    @apply inline-flex items-center rounded-lg px-3 py-2 font-medium bg-emerald-600 text-white hover:bg-emerald-700; 
+  }
+  .btn-outline { 
+    @apply inline-flex items-center rounded-lg px-3 py-2 font-medium border border-slate-300 text-slate-700 hover:bg-slate-50; 
+  }
+}
+
+/* Small helpers we referenced in stubs */
+@layer utilities {
+  .container-7xl { 
+    max-width: 1280px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+}
+
+/* ──────────────────────────────────────────────
+   DEBUG (remove after you find the culprit)
+   Highlights the very first child inside <main>
+   so you can see whether a top margin is causing the gap.
+   ────────────────────────────────────────────── */
+main > *:first-child {
+  outline: 1px dashed #0ea5e9; /* cyan outline so you can see the first child */
+}

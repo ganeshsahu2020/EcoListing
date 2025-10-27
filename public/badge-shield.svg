@@ -1,0 +1,7 @@
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="40" rx="8" fill="#6366f1"/>
+  <g>
+    <path d="M24 12l-8 4v7c0 10 8 13 8 13s8-3 8-13v-7l-8-4z" fill="#fff" stroke="#6366f1" stroke-width="2"/>
+    <text x="45" y="27" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Protected</text>
+  </g>
+</svg>

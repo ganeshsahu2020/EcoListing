@@ -1,0 +1,59 @@
+{
+  "name": "ecolisting",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5180",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview --port 5180 --strictPort",
+    "ingest": "tsx etl/ingest-repliers.ts",
+    "ingest:dry": "cross-env DRY_RUN=1 tsx etl/ingest-repliers.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@supabase/supabase-js": "^2.74.0",
+    "axios": "^1.12.2",
+    "clsx": "^2.1.1",
+    "leaflet": "^1.9.4",
+    "maplibre-gl": "^5.8.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hot-toast": "^2.6.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.9.3",
+    "recharts": "^3.2.1",
+    "supercluster": "^8.0.1",
+    "uuid": "^9.0.1",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/maplibre-gl": "^1.13.2",
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@types/recharts": "^1.8.29",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.45.0",
+    "vite": "7.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
